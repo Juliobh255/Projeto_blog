@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Blog app</string>
+    <string name="text_list_blog">Meus Post</string>
+    <string name="text_detail_blog">Detalhes</string>
+    <string name="text_title_remove_dialog">Deseja realmente excluir?</string>
+    <string name="text_title_remove_dialog_yes">Sim</string>
+
+    <string name="text_name_fragment_list">Blogs</string>
+    <string name="text_name_fragment_detail">Detalhes</string>
+    <string name="text_name_title_detail">Detalhe do Post</string>
+    <string name="text_name_title_animation">Que pena, não há posts</string>
+    <string name="text_title_detail">Título:</string>
+    <string name="text_title_date">Data:</string>
+    <string name="text_title_description">Descrição:</string>
+    <string name="text_title_description_ex">Cada vez mais, os departamentos de TI precisam melhorar a eficiência e aproveitar um conjunto básico de tecnologias para capacitar o departamento e a empresa como um todo. As soluções de Tecnologia da Informação da OpenText™ elevam o status do departamento de TI como um gerador de valor alinhado aos negócios com uma agenda voltada para o futuro.</string>
+
+    <string name="text_name_fragment_new">Novo Post</string>
+    <string name="text_new_post">Adicionar novo post</string>
+    <string name="text_new_upload">Atualizar posts</string>
+    <string name="title_new_title_post">Adicione um título</string>
+    <string name="title_new_post">Descreva seu texto</string>
+    <string name="title_add_new_post">Novo post</string>
+    <string name="title_remove_post">Excluir</string>
+    <string name="empty"></string>
+    <string name="empty_description">Preencha os dados título e descrição.</string>
+
+
+    <!--List MOCK EX-->
+    <string name="title">Tecnologia mundial</string>
+    <string name="date">11/06/2024</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.fragments.NewPostFragment">
+
+    <TextView
+        android:id="@+id/textTitleNewPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="@string/text_new_post"
+        android:textColor="@color/text_color"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextTitleNewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bord_transparent"
+        android:hint="@string/title_new_title_post"
+        android:textColorHint="@color/text_color"
+        app:boxStrokeColor="@color/text_color"
+        app:layout_constraintTop_toBottomOf="@id/textTitleNewPost"
+        tools:layout_editor_absoluteX="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTitleNewPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="@color/text_color"
+            android:textSize="21sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextNewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bord_transparent"
+        android:hint="@string/title_new_post"
+        android:overScrollMode="always"
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextTitleNewPost">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editNewPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="10"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnAddNewPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/bord_bottom_inactive"
+        android:text="@string/title_add_new_post"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:background="@drawable/degrade_progress"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/background_sec"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddNewPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/outlinedTextNewPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_fragments"
+    app:startDestination="@id/navigation_list">
+
+    <fragment android:id="@+id/navigation_list"
+        android:name="com.example.blogapp.view.fragments.ListPostFragment"
+        tools:layout="@layout/layout_fragment_list_post"/>
+
+    <fragment android:id="@+id/navigation_detail"
+        android:name="com.example.blogapp.view.fragments.DetailPostFragment"
+        tools:layout="@layout/layout_fragment_datail_post"/>
+
+    <fragment android:id="@+id/navigation_create"
+        android:name="com.example.blogapp.view.fragments.NewPostFragment"
+        tools:layout="@layout/layout_fragment_new_post"/>
+
+</navigation>

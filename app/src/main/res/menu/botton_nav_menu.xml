@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@drawable/ic_list_blog"
+        android:title="@string/text_name_fragment_list" />
+
+    <item
+        android:id="@+id/navigation_detail"
+        android:icon="@drawable/ic_detail_blog"
+        android:visible="false"
+        android:title="@string/text_name_fragment_detail" />
+
+    <item
+        android:id="@+id/navigation_create"
+        android:icon="@drawable/ic_new_blog"
+        android:title="@string/text_name_fragment_new" />
+
+</menu>
