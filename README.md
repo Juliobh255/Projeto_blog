@@ -1,4 +1,4 @@
-# App teste single
+# App Blog single
 App de teste blogs para adicionar posts.
 
 Este projeto foi desenvolvido utilizando MVVM e contém:
